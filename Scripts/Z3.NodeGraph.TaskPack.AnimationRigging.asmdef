@@ -1,0 +1,17 @@
+{
+    "name": "Z3.NodeGraph.TaskPack.AnimationRigging",
+    "rootNamespace": "Z3.NodeGraph.TaskPack.AnimationRigging",
+    "references": [
+        "GUID:7f7d1af65c2641843945d409d28f2e20",
+        "GUID:65cb82271f3f0dd4eaad6e68e59b42a4"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
