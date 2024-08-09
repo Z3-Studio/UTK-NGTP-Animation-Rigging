@@ -9,13 +9,12 @@ namespace Z3.NodeGraph.TaskPack.AnimationRigging
     [NodeDescription("TODO")]
     public class SetRigConstraintWeight : ActionTask
     {
-        public Parameter<IRigConstraint> rigConstraint;
-
-        public bool useSpeed = true;
+        [SerializeField] private Parameter<IRigConstraint> rigConstraint;
+        [SerializeField] private bool useSpeed = true;
         //[MinMaxSlider(0f, 1f)]
-        public Parameter<float> weight;
+        [SerializeField] private Parameter<float> weight;
         //[ShowIf(nameof(useSpeed), 1)]
-        public Parameter<float> duration;
+        [SerializeField] private Parameter<float> duration;
 
         private float currentWeight;
 

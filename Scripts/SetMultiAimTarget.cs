@@ -7,9 +7,11 @@ namespace Z3.NodeGraph.TaskPack.AnimationRigging
 {
     [NodeCategory(Categories.AnimationRigging)]
     [NodeDescription("TODO")]
-    public class SetMultiAimTarget : ActionTask<MultiAimConstraint> // AimIK
+    public class SetMultiAimTarget : ActionTask // AimIK
     {
-        public Parameter<Transform> target;
+        [ParameterDefinition(AutoBindType.SelfBind)]
+        [SerializeField] private Parameter<MultiAimConstraint> data;
+        [SerializeField] private Parameter<Transform> target;
 
         public override string Info => $"{base.Info} = {target}";
 
