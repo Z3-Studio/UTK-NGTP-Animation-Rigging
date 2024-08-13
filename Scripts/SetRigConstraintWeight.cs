@@ -36,7 +36,7 @@ namespace Z3.NodeGraph.TaskPack.AnimationRigging
 
         protected override void UpdateAction()
         {
-            currentWeight = Mathf.MoveTowards(currentWeight, weight.Value, 1f / duration.Value * Time.fixedDeltaTime);
+            currentWeight = Mathf.MoveTowards(currentWeight, weight.Value, 1f / duration.Value * DeltaTime);
             rigConstraint.Value.weight = currentWeight;
 
             if (currentWeight == weight.Value)
